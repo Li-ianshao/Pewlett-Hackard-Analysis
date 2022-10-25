@@ -54,3 +54,11 @@ LEFT JOIN titles t3
 ON t1.emp_no = t3.emp_no
 WHERE t2.to_date = '9999-01-01' AND birth_date BETWEEN '1965-1-1' AND '1965-12-31'
 ORDER BY emp_no;
+
+------------------------------- Summary -------------------------------
+
+SELECT COUNT(title)
+FROM unique_titles
+
+SELECT COUNT(emp_no)
+FROM mentorship_eligibilty
